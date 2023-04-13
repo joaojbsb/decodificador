@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inter:wght@400;700&family=Open+Sans:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Decodificador e Codificador</title>
+</head>
+<body>
+
+
+    <main class="content">
+
+        <section class="content-right">
+            <header class="logo">
+                <img src="./assets/imagens/logo-alura.png" alt="Logo alura">
+                <button > <img src="./assets/imagens/font+.png" alt="icone aumentar fonte" class="aumentar-font">                
+                </button>
+                <button > <img src="./assets/imagens/font-.png" alt="icone diminuir fonte" class="diminuir-font">                
+                </button>
+                <button > <img src="./assets/imagens/contraste.png" alt="contraste" class="contrast">                
+                </button>
+            </header>
+            <textarea id="text-area" placeholder="Digite seu texto"></textarea>
+
+            <div class="buttons">
+                <p><img src="./assets/imagens/iconeatencion.png" alt="icone atençaõ"> Apenas letras minúsculas e sem acento.</p>
+                <button class="criptografar" onclick=codificar()>Criptografar</button>
+                <button class="descriptografar" onclick=descriptografar()>Descriptografar</button>
+            </div>
+
+        </section>
+
+        <section class="content-left">
+            <div class="imagem">
+                <img src="./assets/imagens/imagem-search.svg" alt="garoto com lupa" id="imagem">
+            </div>
+
+            <div class="text-not-found" id="text-not-found">
+                <h3>Nenhuma mensagem </br>encontrada</h3>
+            </div>
+
+            <div class="text-cripdescrip">
+                <textarea name="" id="text-output" placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+            </div>
+
+            <div class="text-copy" id="text-copy">
+                <button id="button-copy">Copiar</button>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        Todos os direitos reservados &copy | Desenvolvido por João Oliveira
+    </footer>
+
+
+    <script src="./javascript/script.js"></script>
+</body>
+</html>

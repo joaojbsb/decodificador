@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing: antilisead;
+    --moz-osx-font-smoothing: grayscale;
+
+}
+
+
+body {
+    background: var(--background-color);
+
+    font-size: 1.6rem;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    --background-color: #E5E5E5;
+    --background-area-image: #FFFFFF;
+    --background-botton1: #0A3871;
+    --background-botton2: #D8DFE8;    
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 69.45% 30.55%;
+}
+
+header {
+    display: flex;
+    gap: 2rem;
+}
+
+.content .content-right .logo {
+    margin-left: 4rem;
+    margin-bottom: 8rem;
+}
+
+.aumentar-font {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.diminuir-font {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.contrast {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.content .content-right #text-area {
+    width: 68rem;
+    height: 40rem;
+    margin-left: 24rem;
+
+    margin-bottom: 4rem;
+
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    background: var(--background-color);
+    border: none;
+    resize: none;
+}
+
+.content .content-right #text-area:focus {
+    outline: none;
+}
+
+.content .content-right #text-area::placeholder {
+    font-size: 3.2rem;
+    color: var(--background-botton1);
+}
+
+.content .content-right .buttons p {
+    font-size: 1.2rem;
+    margin-bottom: 1.6rem;
+}
+
+/* Estilizando botões*/
+.content .content-right .buttons {
+    margin-left: 24rem;
+}
+
+.content .content-right .criptografar {
+    width: 32.8rem;
+    height: 6.7rem;
+    font-size: 1.6rem;
+    color: var(--background-area-image);
+    background: var(--background-botton1);
+    border-radius: 2.4rem;
+    margin-right: 2.4rem;
+
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+.content .content-right .criptografar:hover {
+    color: var(--background-botton1);
+    background: var(--background-area-image);
+}
+
+.content .content-right .descriptografar {
+    width: 32.8rem;
+    height: 6.7rem;
+    font-size: 1.6rem;
+    color: var(--background-botton1);
+    background: var(--background-botton2);
+    border-radius: 2.4rem;
+
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+.content .content-right .descriptografar:hover {
+    color: var(--background-area-image);
+    background: var(--background-botton1);
+}
+/*-------------------------*/
+
+.content .content-right {
+    height: calc(100vh - 80px);
+    margin-top: 4rem;    
+}
+
+.content .content-left {
+    background: var(--background-area-image);
+    height: calc(100vh - 80px);
+    margin-right: 4rem;
+    margin-top: 4rem;
+
+    border-radius: 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .content-left img {
+
+}
+
+.content .content-left .text-not-found {
+    width: 33.6rem;
+    text-align: center;
+    color: #343A40;
+
+}
+
+.content .content-left .text-cripdescrip {
+    width: 33.6rem;
+    text-align: center;
+    margin-top: 1.6rem;
+}
+
+.content .content-left .text-cripdescrip #text-output {
+    text-align: center;
+    font-size: 3.2rem;
+    color: #0A3871;
+    width: 25rem;
+    height: 9rem;
+    resize: none;
+    border: none;
+}
+
+.content .content-left .text-cripdescrip #text-output::placeholder {
+    color: #495057;
+    line-height: 150%;  
+    font-size: 1rem; 
+}
+
+.content .content-left .text-cripdescrip #text-output:focus {
+    outline: none;
+}
+
+.content .content-left #button-copy {
+    width: 32.8rem;
+    height: 6.7rem;
+    font-size: 1.6rem;
+    color: var(--background-botton1);
+    background: var(--background-area-image);
+    border-radius: 2.4rem;
+
+    margin-top: 15rem;
+
+    cursor: pointer;
+    display: none;
+    transition: all 0.7s ease-in-out;
+}
+
+.content .content-left #button-copy:hover {
+    color: var(--background-area-image);
+    background: var(--background-botton1);
+}
+
+.rodape {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
