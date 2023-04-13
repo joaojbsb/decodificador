@@ -20,7 +20,9 @@ body {
     --background-color: #E5E5E5;
     --background-area-image: #FFFFFF;
     --background-botton1: #0A3871;
-    --background-botton2: #D8DFE8;    
+    --background-botton2: #D8DFE8; 
+    
+    --background-dark: #312d37;
 }
 
 .content {
@@ -142,14 +144,14 @@ header {
 }
 
 .content .content-left img {
-
+    width: 33rem;
 }
 
 .content .content-left .text-not-found {
     width: 33.6rem;
     text-align: center;
     color: #343A40;
-
+    margin-top: 2rem;
 }
 
 .content .content-left .text-cripdescrip {
@@ -202,6 +204,37 @@ header {
     text-align: center;
     font-weight: bold;
 }
+
+/* Estilizando para o tema dark */
+.dark {
+    background: var(--background-dark);
+    color: yellow;
+}
+
+.dark .content-right #text-area,
+.dark .content-left,
+.dark .content-left #text-output,
+.dark .content-right .buttons button
+{
+    background: var(--background-dark);
+}
+
+.dark .content-right .buttons button,
+.dark .content-left #text-not-found,
+.dark .content-left .text-cripdescrip #text-output,
+.dark .content-right #text-area::placeholder,
+.dark .content-left .text-cripdescrip #text-output::placeholder
+{
+    color: yellow;
+}
+
+.dark .content-right #text-area:focus,
+.dark .content-left .text-cripdescrip #text-output:focus
+{
+    outline: yellow;
+}
+
+
 
 
 

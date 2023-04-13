@@ -26,3 +26,18 @@ function descriptografar(event) {
     document.getElementById('text-not-found').style.display = 'none';
     document.getElementById('imagem').style.display = 'none';
 }
+
+function dark() {
+    const bodyDark = document.getElementById('body');
+    const textArea = document.getElementById('text-area');
+
+    if (bodyDark.classList.value == 'dark') {
+        bodyDark.classList.remove('dark');
+        textArea.classList.remove('dark');
+    } else {
+        bodyDark.classList.add('dark');
+        textArea.classList.add('dark');
+    }
+
+    console.log(bodyDark.classList);
+}

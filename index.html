@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Decodificador e Codificador</title>
 </head>
-<body>
+<body id="body">
 
 
-    <main class="content">
+    <main class="content" id="main">
 
         <section class="content-right">
             <header class="logo">
@@ -23,7 +23,7 @@
                 </button>
                 <button > <img src="./assets/imagens/font-.png" alt="icone diminuir fonte" class="diminuir-font">                
                 </button>
-                <button > <img src="./assets/imagens/contraste.png" alt="contraste" class="contrast">                
+                <button onclick=dark()> <img src="./assets/imagens/contraste.png" alt="contraste" class="contrast">                
                 </button>
             </header>
             <textarea id="text-area" placeholder="Digite seu texto"></textarea>
@@ -46,7 +46,7 @@
             </div>
 
             <div class="text-cripdescrip">
-                <textarea name="" id="text-output" placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+                <textarea name="" id="text-output" readonly placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
             </div>
 
             <div class="text-copy" id="text-copy">
