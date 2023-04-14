@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Decodificador e Codificador</title>
 </head>
@@ -19,9 +20,11 @@
         <section class="content-right">
             <header class="logo">
                 <img src="./assets/imagens/logo-alura.png" alt="Logo alura">
-                <button > <img src="./assets/imagens/font+.png" alt="icone aumentar fonte" class="aumentar-font">                
+                <button onclick="incrementFont()"> <img src="./assets/imagens/font+.png" alt="icone aumentar fonte" class="aumentar-font">                
                 </button>
-                <button > <img src="./assets/imagens/font-.png" alt="icone diminuir fonte" class="diminuir-font">                
+                <button onclick="font()"> <img src="./assets/imagens/font-padrao.svg" alt="icone aumentar fonte" class="aumentar-font">                
+                </button>
+                <button onclick="decrementFont()"> <img src="./assets/imagens/font-.png" alt="icone diminuir fonte" class="diminuir-font">                
                 </button>
                 <button onclick=dark()> <img src="./assets/imagens/contraste.png" alt="contraste" class="contrast">                
                 </button>
@@ -50,7 +53,7 @@
             </div>
 
             <div class="text-copy" id="text-copy">
-                <button id="button-copy">Copiar</button>
+                <button id="button-copy" onclick="copiar()">Copiar</button>
             </div>
             
         </section>
@@ -59,8 +62,13 @@
 
     <footer class="rodape">
         Todos os direitos reservados &copy | Desenvolvido por João Oliveira
+        <div class="redes-sociais">
+            <a target="_blank" href="https://linkedin.com/in/jo%C3%A3o-junior-dev"><img src="./assets/imagens/linkedin.png" alt="Logo linkedin"></a>
+            <a target="_blank" href="https://github.com/joaojbsb"><img src="./assets/imagens/github.png" alt="logo github"></a>
+            <a target="_blank" href="https://instagram.com/___joao.junior?igshid=MTIzZWQxMDU="><img src="./assets/imagens/Instagram.png" alt="logo instagram"></a>
+            <a target="_blank" href="https://www.facebook.com/joao.junior.35325?mibextid=ZbWKwL"><img src="./assets/imagens/Facebook.png" alt="logo facebook"></a>
+        </div>
     </footer>
-
 
     <script src="./javascript/script.js"></script>
 </body>

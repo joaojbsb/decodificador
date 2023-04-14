@@ -12,6 +12,7 @@ body {
     background: var(--background-color);
 
     font-size: 1.6rem;
+    transition: all .6s ease-in-out;
 }
 
 :root {
@@ -63,10 +64,13 @@ header {
     margin-bottom: 4rem;
 
     font-size: 3.2rem;
+    color: var(--background-botton1);
     line-height: 4.8rem;
     background: var(--background-color);
     border: none;
     resize: none;
+
+    transition: all .6s ease-in-out;
 }
 
 .content .content-right #text-area:focus {
@@ -76,11 +80,14 @@ header {
 .content .content-right #text-area::placeholder {
     font-size: 3.2rem;
     color: var(--background-botton1);
+
+    transition: all .6s ease-in-out;
 }
 
 .content .content-right .buttons p {
     font-size: 1.2rem;
     margin-bottom: 1.6rem;
+    transition: all .6s ease-in-out;
 }
 
 /* Estilizando botões*/
@@ -126,7 +133,9 @@ header {
 
 .content .content-right {
     height: calc(100vh - 80px);
-    margin-top: 4rem;    
+    margin-top: 4rem;  
+    
+    transition: all .6s ease-in-out;
 }
 
 .content .content-left {
@@ -141,6 +150,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    transition: all .6s ease-in-out;
 }
 
 .content .content-left img {
@@ -152,6 +163,8 @@ header {
     text-align: center;
     color: #343A40;
     margin-top: 2rem;
+
+    transition: all .6s ease-in-out;
 }
 
 .content .content-left .text-cripdescrip {
@@ -168,12 +181,15 @@ header {
     height: 9rem;
     resize: none;
     border: none;
+
+    transition: all .6s ease-in-out;
 }
 
 .content .content-left .text-cripdescrip #text-output::placeholder {
     color: #495057;
     line-height: 150%;  
     font-size: 1rem; 
+    transition: all .6s ease-in-out;
 }
 
 .content .content-left .text-cripdescrip #text-output:focus {
@@ -203,6 +219,23 @@ header {
 .rodape {
     text-align: center;
     font-weight: bold;
+
+    transition: all .6s ease-in-out;
+}
+
+.rodape .redes-sociais {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.rodape .redes-sociais img {
+    width: 2.4rem;
+    height: 2.4rem;
 }
 
 /* Estilizando para o tema dark */
@@ -214,28 +247,58 @@ header {
 .dark .content-right #text-area,
 .dark .content-left,
 .dark .content-left #text-output,
-.dark .content-right .buttons button
+.dark .content-right .buttons button,
+.dark .content-left .text-copy #button-copy
 {
     background: var(--background-dark);
 }
 
 .dark .content-right .buttons button,
+.dark .content-left .text-copy #button-copy,
 .dark .content-left #text-not-found,
 .dark .content-left .text-cripdescrip #text-output,
+.dark .content-right #text-area,
 .dark .content-right #text-area::placeholder,
 .dark .content-left .text-cripdescrip #text-output::placeholder
 {
     color: yellow;
 }
 
-.dark .content-right #text-area:focus,
-.dark .content-left .text-cripdescrip #text-output:focus
+.dark .content-right #text-area
+
 {
-    outline: yellow;
+    border: 1px solid  yellow;
 }
 
+.dark .content-right #text-area:focus
 
+{
+    outline: 1px solid  yellow;
+}
 
+/* aumentar e diminuir tamanho das fontes*/
+.increment-font p,
+.increment-font .content-right .buttons button,
+.increment-font .content-left .text-copy #button-copy,
+.increment-font .content-left #text-not-found,
+.increment-font .content-left .text-cripdescrip #text-output,
+.increment-font .content-left .text-cripdescrip #text-output::placeholder,
+.increment-font .rodape
+{
+    font-size: 2.2rem !important;
+}
 
+.decrement-font .rodape p,
+.decrement-font .content-right .buttons button,
+.decrement-font .content-right #text-area,
+.decrement-font .content-right #text-area::placeholder,
+.decrement-font .content-left .text-copy #button-copy,
+.decrement-font .content-left #text-not-found,
+.decrement-font .content-left .text-cripdescrip #text-output,
+.decrement-font .content-left .text-cripdescrip #text-output::placeholder,
+.decrement-font .rodape
+{
+    font-size: 1.4rem !important;
+}
 
 
