@@ -5,6 +5,7 @@ let textOutput = document.getElementById('text-output');
 
 
 function codificar(event){
+
     textEncoded = textInput.value.replace('e', 'enter').replace('i', 'imes').replace('a', "ai").replace('o', 'ober').replace('u', 'ufat');
 
     console.log(textEncoded);
@@ -15,6 +16,7 @@ function codificar(event){
     document.getElementById('imagem').style.display = 'none';
     document.getElementById('text-output').style.height = '42rem';
     document.getElementById('button-copy').style.display = 'block';
+    textInput.value = '';
  
 };
 
@@ -69,4 +71,4 @@ function decrementFont (){
 function font () {
     body.classList.remove('increment-font');
     body.classList.remove('decrement-font');
-}
+};
