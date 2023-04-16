@@ -5,9 +5,13 @@ let textOutput = document.getElementById('text-output');
 
 
 function codificar(event){
-
+        
     textEncoded = textInput.value.replace('e', 'enter').replace('i', 'imes').replace('a', "ai").replace('o', 'ober').replace('u', 'ufat');
 
+    if (!/^[a-z ]+$/.test(textEncoded)) {
+        alert("Atenção: Apenas letras minúsculas e sem acento...");
+        return;
+      }
     console.log(textEncoded);
 
     textOutput.value = textEncoded;
